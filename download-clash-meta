@@ -15,4 +15,4 @@ ARCH=${ARCH:=amd64}
 
 OUTPUT=${OUTPUT:=clash-meta}
 
-curl -LJ "https://github.com/${REPO}/releases/latest/download/clash.meta-linux-${ARCH}-${VERSION}.gz" | gunzip > ${OUTPUT}
+curl -LJ "https://github.com/${REPO}/releases/download/${VERSION}/clash.meta-linux-${ARCH}-${VERSION}.gz" | gunzip > ${OUTPUT}
